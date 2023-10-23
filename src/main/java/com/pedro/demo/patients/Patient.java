@@ -25,7 +25,7 @@ public class Patient {
     private Endereco endereco;
     private int quarto;
 
-    public Patient(PatientDTO data){
+    public Patient(PatientCreateDTO data){
         this.nome = data.nome();
         this.email = data.email();
         this.telefone = data.telefone();
