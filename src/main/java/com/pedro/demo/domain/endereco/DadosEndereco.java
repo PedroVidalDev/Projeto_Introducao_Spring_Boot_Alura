@@ -1,4 +1,4 @@
-package com.pedro.demo.endereco;
+package com.pedro.demo.domain.endereco;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;

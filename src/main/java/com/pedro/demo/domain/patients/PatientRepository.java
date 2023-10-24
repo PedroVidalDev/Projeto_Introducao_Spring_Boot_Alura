@@ -1,4 +1,4 @@
-package com.pedro.demo.patients;
+package com.pedro.demo.domain.patients;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

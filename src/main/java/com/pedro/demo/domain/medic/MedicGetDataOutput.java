@@ -1,6 +1,4 @@
-package com.pedro.demo.medic;
-
-import ch.qos.logback.core.joran.spi.ElementSelector;
+package com.pedro.demo.domain.medic;
 
 public record MedicGetDataOutput(
         Long id,

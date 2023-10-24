@@ -1,6 +1,7 @@
 package com.pedro.demo.controller;
 
-import com.pedro.demo.medic.*;
+import com.pedro.demo.domain.medic.*;
+import com.pedro.demo.domain.medic.*;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;

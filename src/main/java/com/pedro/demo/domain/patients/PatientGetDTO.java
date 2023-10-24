@@ -1,6 +1,4 @@
-package com.pedro.demo.patients;
-
-import com.pedro.demo.medic.MedicGetDataOutput;
+package com.pedro.demo.domain.patients;
 
 public record PatientGetDTO (
     Long id,

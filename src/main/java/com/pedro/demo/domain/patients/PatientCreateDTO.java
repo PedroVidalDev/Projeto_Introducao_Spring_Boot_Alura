@@ -1,6 +1,6 @@
-package com.pedro.demo.patients;
+package com.pedro.demo.domain.patients;
 
-import com.pedro.demo.endereco.DadosEndereco;
+import com.pedro.demo.domain.endereco.DadosEndereco;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
