@@ -1,4 +1,4 @@
-package com.pedro.demo.infra;
+package com.pedro.demo.infra.exception;
 
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.ResponseEntity;
