@@ -1,0 +1,1 @@
+alter table schedules add column cancel_motive varchar(100)
