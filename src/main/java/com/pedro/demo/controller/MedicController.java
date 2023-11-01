@@ -2,6 +2,7 @@ package com.pedro.demo.controller;
 
 import com.pedro.demo.domain.medic.*;
 import com.pedro.demo.domain.medic.*;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,6 +15,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 @RestController
 @RequestMapping("medics")
+@SecurityRequirement(name = "bearer-key")
 public class MedicController {
 
     @Autowired
