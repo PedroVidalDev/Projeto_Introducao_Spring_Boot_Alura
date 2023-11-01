@@ -1,5 +1,6 @@
 package com.pedro.demo.infra.exception;
 
+import com.pedro.demo.domain.schedule.ValidationExceptionSchedule;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
@@ -20,6 +21,11 @@ public class TratamentoDeErros {
         var erros = e.getFieldErrors();
 
         return ResponseEntity.badRequest().body(erros.stream().map(DadosErroValidacao::new).toList());
+    }
+
+    @ExceptionHandler(ValidationExceptionSchedule.class)
+    public ResponseEntity tratarErroRegraDeNegocio(ValidationExceptionSchedule ex){
+        return ResponseEntity.badRequest().body(ex.getMessage());
     }
 
     private record DadosErroValidacao(String campo, String mensagem){
