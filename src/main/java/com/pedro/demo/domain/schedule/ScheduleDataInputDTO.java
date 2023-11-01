@@ -6,7 +6,7 @@ import jakarta.validation.constraints.NotNull;
 
 import java.time.LocalDateTime;
 
-public record ScheduleDataInput(
+public record ScheduleDataInputDTO(
         Long idMedic,
         @NotNull Long idPatient,
         @NotNull @Future LocalDateTime date,

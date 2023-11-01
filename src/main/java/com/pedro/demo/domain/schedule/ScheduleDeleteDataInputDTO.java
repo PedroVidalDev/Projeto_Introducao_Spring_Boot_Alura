@@ -2,7 +2,7 @@ package com.pedro.demo.domain.schedule;
 
 import jakarta.validation.constraints.NotNull;
 
-public record ScheduleDeleteDataInput(
+public record ScheduleDeleteDataInputDTO(
         @NotNull Long idSchedule,
         @NotNull ScheduleCancelMotive cancelMotive
 ) {
